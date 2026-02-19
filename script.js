@@ -40,3 +40,13 @@ window.addEventListener("scroll",()=>{
 let value=window.scrollY;
 document.querySelector(".bg").style.transform="translateY("+value*0.3+"px)";
 });
+
+// mobile menu toggle
+function toggleMenu(){
+document.getElementById("nav-links").classList.toggle("active");
+}
+
+// navbar glow on scroll
+window.addEventListener("scroll",()=>{
+document.querySelector("header").classList.toggle("scrolled",window.scrollY>50);
+});
